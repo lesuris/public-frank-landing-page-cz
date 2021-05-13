@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<!--[if lt IE 10]> <html  lang="en" class="iex"> <![endif]-->
+<!--[if (gt IE 10)|!(IE)]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Frank Report CZ</title>
+        <meta name="description" content="Oznamovací Systém CZ" />
+        <script src="./res/scripts/jquery.min.js"></script>
+        <link
+            rel="stylesheet"
+            href="./res/scripts/bootstrap/css/bootstrap.css"
+        />
+        <script src="./res/scripts/script.js"></script>
+        <style>
+            :root {
+                --f-default-family: -apple-system, BlinkMacSystemFont,
+                    'Segoe UI', Helvetica, Arial, sans-serif,
+                    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+                --c-blue: #039;
+                --c-green: #00d991;
+                scroll-behavior: smooth;
+            }
+        </style>
+        <link rel="stylesheet" href="./res/style.css" />
+        <link rel="stylesheet" href="./res/css/animations.css" />
+        <link rel="stylesheet" href="./res/css/components.css" />
+        <link rel="stylesheet" href="./res/css/skin.css" />
+        <style>
+            .navbar-brand img {
+                max-width: 80% !important;
+            }
+            .jumbo-intro button.green {
+                background-color: var(--c-green) !important;
+                font-size: 1.6rem !important;
+                color: black;
+            }
+            .jumbo-intro button.green:hover {
+                background-color: var(--c-green) !important;
+            }
+            .box-steps .step-number {
+                background-color: var(--c-green);
+                color: white;
+            }
+            .special-offer {
+                display: inline-block;
+                position: relative;
+                color: white;
+                font-weight: bold;
+                margin: 0 auto;
+                color: var(--c-green);
+            }
+            .special-offer img {
+                max-width: 20px !important;
+            }
+            .pricing-table .special-offer {
+                font-size: 1.5rem;
+                background: var(--c-green);
+                color: white;
+                padding: 5px 10px 0 10px;
+            }
+            .pricing-table a {
+                background: var(--c-blue) !important;
+                color: white !important;
+            }
+
+            #contact a.reserve {
+                background-color: var(--c-green) !important;
+                color: white !important;
+            }
+            .navbar-right img {
+                max-width: 20px !important;
+                padding-right: 2px;
+            }
+            .icon-headline img {
+                max-width: 55px !important;
+                padding: 5px 15px 10px 0;
+                float: left;
+            }
+            .modal-title img {
+                max-width: 25px !important;
+            }
+            .timeline-title img {
+                max-width: 25px !important;
+            }
+        </style>
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./res/images/fav/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./res/images/fav/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./res/images/fav/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./res/images/fav/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./res/images/fav/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#2b5797" />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+    <body id="intro">
+        <div id="preloader"></div>
+        <header
+            class="fixed-top scroll-change"
+            data-menu-anima="fade-bottom"
+            style="height: 70px"
+        >
+            <div
+                class="
+                    navbar navbar-default
+                    mega-menu-fullwidth
+                    navbar-fixed-top
+                "
+                role="navigation"
+            >
+                <div class="navbar navbar-main">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <a class="navbar-brand" href="index.html">
+                                <!-- frankreport.cz -->
+
+                                <img
+                                    class="logo-default"
+                                    src="./res/images/logo-oz.png"
+                                    alt="logo"
+                                />
+                                <img
+                                    class="logo-retina"
+                                    src="./res/images/logo-oz.png"
+                                    alt="logo"
+                                />
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse">
+                            <div class="nav navbar-nav navbar-right">
+                                <ul class="nav navbar-nav">
+                                    <li class="active">
+                                        <a href="#intro" role="button">Úvod</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#functions" role="button"
+                                            >Funkce</a
+                                        >
+                                    </li>
+
+                                    <li class="">
+                                        <a href="#benefits" role="button"
+                                            >Výhody</a
+                                        >
+                                    </li>
+
+                                    <li class="">
+                                        <a href="#eu" role="button"
+                                            ><img src="res/images/eu.png" /> EU
+                                            Směrnice</a
+                                        >
+                                    </li>
+
+                                    <li class="">
+                                        <a href="#pricing" role="button"
+                                            >Ceník</a
+                                        >
+                                    </li>
+                                    <li class="">
+                                        <a href="#contact" role="button"
+                                            >Kontakt</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div
+            class="
+                jumbo-intro
+                section-two-blocks
+                two-blocks-container
+                blocks-right
+                bg-color
+                white
+                margin-top-90
+            "
+        >
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img-box lightbox i-center">
+                        <img
+                            src="./res/images/image-1.jpg"
+                            style="
+                                max-width: 620px;
+                                width: 620px;
+                                margin-top: 0px;
+                            "
+                        />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content">
+                        <h1 class="text-xl">
+                            Interní systém pro zlepšení a ochranu oznamovatelů.
+                        </h1>
+                        <p>
+                            Bezpečný a snadný způsob jak anonymně oznámit
+                            problém na pracovišti a dát podnět na zlepšení.
+                        </p>
+                        <button
+                            role="button"
+                            id="reservation1"
+                            class="circle-button btn btn-sm green reserve"
+                            data-toggle="modal"
+                            data-target="#reserveModal"
+                        >
+                            Zdarma DEMO na zkoušku
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-empty no-padding-top">
+            <div class="container content">
+                <hr class="space" />
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>
+                            <span class="icon-headline"
+                                ><img src="./res/images/emoji-up.png"
+                            /></span>
+                            Zlepšení firemní kultury pro všechny.
+                        </h4>
+                        <p>
+                            Dáte svým zaměstnancům najevo, že na jejich názoru
+                            záleží a získáte okamžitou zpětnou vazbu.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>
+                            <span class="icon-headline"
+                                ><img src="./res/images/emoji-happy.png"
+                            /></span>
+                            Snížení fluktuace a řešení problémů.
+                        </h4>
+                        <p>
+                            Předejděte včas problémům, které by Vás stály čas i
+                            peníze.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>
+                            <span class="icon-headline"
+                                ><img src="./res/images/emoji-check.png"
+                            /></span>
+                            Splnení požadavku nové směrnice EU.
+                        </h4>
+                        <p>
+                            Splníte požadavky směrnice o ochraně osob na
+                            bezpečný oznamovací kanál garantující ochranu
+                            oznamovatelů.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+            class="section-bg-image bg-top"
+            style="background-image: url(./res/images/bg-11.png)"
+        >
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-8 col-center text-center">
+                        <h1>Jak to funguje?</h1>
+                    </div>
+                </div>
+                <hr class="space" />
+                <div class="row box-steps">
+                    <div class="step-item col-md-4">
+                        <span class="step-number">1</span>
+                        <h3>Anonymní první kontakt.</h3>
+                        <p>
+                            Důvěrnost, ochrana údajů, tajemství a nezávislost
+                            jsou u nás na prvním místě. Oznamovateli je zaručená
+                            anonymita a tudíž mu nehrozí odvetná opatření.
+                        </p>
+                    </div>
+                    <div class="step-item col-md-4">
+                        <span class="step-number">2</span>
+                        <h3>Notifikace a zpracování.</h3>
+                        <p>
+                            Po celou dobu řešení dostávají oznamovatel i řešitel
+                            notifikace o všech událostech týkajících se
+                            oznámení. Obě strany mají neustálý přehled o stavu
+                            šetření.
+                        </p>
+                    </div>
+                    <div class="step-item col-md-4">
+                        <span class="step-number">3</span>
+                        <h3>Komunikace a vyřešení.</h3>
+                        <p>
+                            Oznamovatel a řešitel mohou důvěrně komunikovat a
+                            poskytovat zpětnou vazbu na nové skutečnosti s cílem
+                            vyřešit oznámení s řádnou péčí.
+                        </p>
+                    </div>
+                </div>
+                <hr class="space" id="functions" />
+                <hr class="space" />
+            </div>
+        </div>
+        <div class="section-empty no-padding-top">
+            <div class="container content">
+                <div class="row vertical-row">
+                    <div class="col-md-6">
+                        <h1>Prvotřídní funkce.</h1>
+                        <p>
+                            Systém je navržen, zaveden a provozován způsobem,
+                            který zajišťuje úplnost, celistvost a důvěrnost
+                            informací a brání přístupu neoprávněných osob.
+                            Splňuje kritéria stanovená legislativou Evropské
+                            unie. Je bezpečný, nezávislý a úplně oddělen od
+                            komunikačních kanálů, která příslušná organizace
+                            používá při své běžné činnosti. Poskytuje přehledné
+                            dashboardy a reporty se statistickými údaji.
+                        </p>
+                        <hr class="space s" />
+                    </div>
+                    <div class="col-md-6 boxed-inverse">
+                        <div class="grid-list">
+                            <div class="grid-box row">
+                                <div class="grid-item col-md-4">
+                                    <div class="icon-box icon-box-top-bottom">
+                                        <div class="icon-box-cell">
+                                            <i
+                                                class="fa-smile-o fa text-xl"
+                                            ></i>
+                                        </div>
+                                        <div class="icon-box-cell">
+                                            <label class="text-m"
+                                                >Jednoduchost</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <div class="icon-box icon-box-top-bottom">
+                                        <div class="icon-box-cell">
+                                            <i class="fa-mobile fa text-xl"></i>
+                                        </div>
+                                        <div class="icon-box-cell">
+                                            <label class="text-m"
+                                                >Web + Mobil</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <div class="icon-box icon-box-top-bottom">
+                                        <div class="icon-box-cell">
+                                            <i class="fa-lock fa text-xl"></i>
+                                        </div>
+                                        <div class="icon-box-cell">
+                                            <label class="text-m"
+                                                >Šifrování</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <div class="icon-box icon-box-top-bottom">
+                                        <div class="icon-box-cell">
+                                            <i
+                                                class="fa-line-chart fa text-xl"
+                                            ></i>
+                                        </div>
+                                        <div class="icon-box-cell">
+                                            <label class="text-m"
+                                                >Administrace</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <div class="icon-box icon-box-top-bottom">
+                                        <div class="icon-box-cell">
+                                            <i
+                                                class="
+                                                    fa-balance-scale fa
+                                                    text-xl
+                                                "
+                                            ></i>
+                                        </div>
+                                        <div class="icon-box-cell">
+                                            <label class="text-m"
+                                                >Právní poradna</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid-item col-md-4">
+                                    <div class="icon-box icon-box-top-bottom">
+                                        <div class="icon-box-cell">
+                                            <i class="fa-book fa text-xl"></i>
+                                        </div>
+                                        <div class="icon-box-cell">
+                                            <label class="text-m"
+                                                >Extra návody</label
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="space" id="benefits" />
+        </div>
+        <div
+            class="section-bg-image bg-top"
+            style="background-image: url(./res/images/bg-16.png)"
+        >
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h1>Výhody našeho bezpečného řešení.</h1>
+                        <p>
+                            Naše řešení je nejdostupnější na českém trhu. Sázíme
+                            na profesionální odbornost a osvědčené technologie,
+                            ale zároveň držíme krok s dobou a uplatňujeme
+                            moderní postupy a frameworky. Spolehlivá podpora a
+                            rychlé řešení vzniklých problémů jsou samozřejmostí.
+                            Individuální přístup zaručí spokojenost všech
+                            zákazníků. Na náš produkt nejvyšší kvality se můžete
+                            spolehnout!
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="list-group accordion-list">
+                            <div class="list-group-item">
+                                <a href="#" class="">
+                                    Jednoduché nasazení a používání</a
+                                >
+                                <div class="panel" style="display: none">
+                                    <div class="inner">
+                                        Jednoduchost a snadné používání je
+                                        základním pilířem našeho řešení. Po
+                                        spuštění to prostě funguje.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="#" class="">
+                                    Šifrované a bezpečné oznámení</a
+                                >
+                                <div class="panel" style="display: none">
+                                    <div class="inner">
+                                        100% anonymita oznamovatele, důvěrnost,
+                                        ochrana údajů, tajemství a nezávislost
+                                        jsou u nás na prvním místě.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="#" class=""> Férové ceny</a>
+                                <div class="panel" style="display: none">
+                                    <div class="inner">
+                                        Naše řešení je nejdostupnější na českém
+                                        trhu. Nabízíme služby ve 3 balíčcích s
+                                        jasnou cenou bez dalších skrytých
+                                        poplatků. Nemusíte se tedy obávat
+                                        žádných nepříjemných překvapení.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="#" class="">Individuální přístup</a>
+                                <div class="panel" style="display: none">
+                                    <div class="inner">
+                                        Víme, že každý zákazník má jiné
+                                        požadavky, proto si zakládáme na
+                                        individuálním přístupu abychom zaručili
+                                        spokojenost všech klientů. Sdělte nám
+                                        prosím Vaše očekávání!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="list-group-item">
+                                <a href="#" class=""
+                                    >Myslíme na tělesně postižené</a
+                                >
+                                <div class="panel" style="display: none">
+                                    <div class="inner">
+                                        Frank Report nebude mít problém použít
+                                        ani návštěvník s těžkým zdravotním
+                                        postižením. Bude schopen i přes svůj
+                                        zdravotní handicap, za pomoci
+                                        prostředků, které má k dispozici, a
+                                        způsobem, který mu vyhovuje, efektivně
+                                        používat a dosáhnout svého cíle.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="space" id="eu" />
+            </div>
+        </div>
+        <div
+            class="section-bg-image bg-top"
+            style="background-image: url(./res/images/bg-8.jpg)"
+        >
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-8 col-center text-center">
+                        <h1 class="text-xl">
+                            Informace o Směrnici EU o ochraně oznamovatelů.
+                        </h1>
+                        <p>
+                            Máte 50 či více zaměstnanců? V tom případě se Vás
+                            týká nová Směrnice Evropského parlamentu a Rady EU
+                            2019/1937 o ochraně osob, které oznamují porušení
+                            práva Unie. Podle ní musí všechny soukromé a veřejné
+                            organizace nad 50 zaměstnanců zavést bezpečný
+                            informační kanál garantující ochranu oznamovatelů
+                            nekalého jednání.
+                        </p>
+                    </div>
+
+                    <hr class="space" />
+                    <div class="text-center">
+                        <a
+                            href="https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32019L1937"
+                            class="circle-button btn btn-md btn-border"
+                            ><i class="fa fa-info"></i>Plné znění EU směrnice</a
+                        >
+                    </div>
+                </div>
+                <hr class="space" />
+                <div class="row">
+                    <div class="col-md-4">
+                        <h1>Rádi Vám pomůžeme.</h1>
+                        <p>
+                            Co přesně požaduje Evropská unie? Stručně a jasně.
+                        </p>
+                    </div>
+                    <div class="col-md-8 boxed-inverse shadow-1">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="fa-ul text-color">
+                                    <li>
+                                        <i class="fa-li fa fa-check"></i>
+                                        Zřídit bezpečný vnitřní oznamovací
+                                        kanál, který je oddělen od běžných
+                                        komunikačních nástrojů firmy.
+                                    </li>
+                                    <li>
+                                        <i class="fa-li fa fa-check"></i>
+                                        Zajistit, že odesílatel oznámení obdrží
+                                        potvrzení o jeho přijetí.
+                                    </li>
+                                    <li>
+                                        <i class="fa-li fa fa-check"></i>
+                                        Určit nestranné osoby (řešitele), které
+                                        budou s oznámeními pracovat.
+                                    </li>
+                                    <li>
+                                        <i class="fa-li fa fa-check"></i>
+                                        Prověřit oznámení, poskytnout
+                                        oznamovateli zpětnou vazbu o řešení a
+                                        přijmout potřebná opatření vedoucí k
+                                        nápravě.
+                                    </li>
+                                    <li>
+                                        <i class="fa-li fa fa-check"></i>
+                                        Zajistit důvěrnost komunikace mezi
+                                        oznamovatelem a řešitelem.
+                                    </li>
+                                    <li>
+                                        <i class="fa-li fa fa-check"></i>
+                                        Zpracovávat poskytnuté údaje v souladu s
+                                        GDPR.
+                                    </li>
+                                    <li>
+                                        <i class="fa-li fa fa-check"></i>
+                                        Vést systém pro archivaci jednotlivých
+                                        oznámení.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="space" />
+                <hr class="space" />
+                <div class="row">
+                    <div class="col-md-8 col-center text-center">
+                        <h2 class="text-xl">Stručný harmonogram.</h2>
+                        <p>
+                            V případě jakýchkoliv doplňujících dotazů se na nás
+                            prosím neváhejte kdykoliv obrátit, velice rádi Vám
+                            je všechny zodpovíme.
+                        </p>
+                    </div>
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-label">
+                                <h4>Říjen 2019</h4>
+                                <p>Schválení směrnice</p>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">
+                                        Schválení směrnice
+                                    </h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Byla schválena směrnice Evropského
+                                        parlamentu a Rady EU o ochraně osob,
+                                        které oznamují porušení práva Unie,
+                                        označována jako „Směrnice o
+                                        whistleblowingu“.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-label">
+                                <h4>Do prosince 2021</h4>
+                                <p>První platnost směrnice</p>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">
+                                        První platnost směrnice
+                                        <img
+                                            loading="lazy"
+                                            src="./res/images/emoji-finger.png"
+                                        />
+                                    </h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Všechny soukromé společnosti v EU nad
+                                        250 zaměstnanců, obce nad 10 000
+                                        obyvatel a veřejné subjekty nad 50
+                                        zaměstnanců musí mít fungující
+                                        oznamovací kanál podle této směrnice.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge"></div>
+                            <div class="timeline-label">
+                                <h4>Do prosince 2023</h4>
+                                <p>Plná platnost směrnice</p>
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">
+                                        Plná platnost směrnice
+                                    </h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>
+                                        Vnitřní oznamovací kanál odpovídající
+                                        požadavkům této směrnice musí zavést
+                                        všechny právnické osoby nad 50
+                                        zaměstnanců.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section-empty" id="pricing">
+            <div class="container content">
+                <h2 class="text-center">
+                    Férové a nejdostupnější řešení na trhu.
+                </h2>
+                <p class="text-center">
+                    <span class="special-offer"
+                        ><img
+                            src="./res/images/emoji-clover.png"
+                            loading="lazy"
+                        />
+                        Květnová AKCE! Získejte 6 měsíců zdarma. Stačí nezávazně
+                        poptat ještě dnes!</span
+                    >
+                </p>
+
+                <hr class="space" />
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="list-group pricing-table">
+                            <div class="list-group-item pricing-price">
+                                490 <span>Kč</span><span>/měsíčně</span
+                                ><span>*</span>
+                                <div class="special-offer">
+                                    V akci usetrite 2940 Kč ročne!
+                                </div>
+                            </div>
+                            <div class="list-group-item pricing-name">
+                                <h3>Standard</h3>
+                            </div>
+                            <div class="list-group-item">
+                                <strong>Do 50 zaměstnanců</strong>
+                            </div>
+
+                            <div class="list-group-item">
+                                Webové a mobilní rozhraní pro správu s detailním
+                                přehledem a grafy
+                            </div>
+                            <div class="list-group-item">Max 5 řešitelů</div>
+                            <div class="list-group-item">
+                                Materiály a tipy pro oznamovatele a řešitele
+                            </div>
+                            <div class="list-group-item">
+                                Přizpůsobení formuláře
+                            </div>
+                            <div class="list-group-item">
+                                Doporučení na právní poradnu
+                            </div>
+                            <div class="list-group-item">
+                                Garance vrácení peněz
+                            </div>
+                            <div class="list-group-item">Email support</div>
+                            <div class="list-group-item pricing-btn">
+                                <a
+                                    class="
+                                        btn btn-sm btn-border
+                                        circle-button
+                                        buynow
+                                    "
+                                    href="#"
+                                    data-flag="buy-standard"
+                                >
+                                    Nezávazně poptat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="list-group pricing-table">
+                            <div class="list-group-item pricing-price">
+                                990 <span>Kč</span><span>/měsíčně</span
+                                ><span>*</span>
+                                <div class="special-offer">
+                                    V akci usetrite 5940 Kč ročne!
+                                </div>
+                            </div>
+                            <div class="list-group-item pricing-name">
+                                <h3>Premium</h3>
+                            </div>
+                            <div class="list-group-item">
+                                <strong>Od 50 do 150 zaměstnanců</strong>
+                            </div>
+
+                            <div class="list-group-item">
+                                Webové a mobilní rozhraní pro správu s detailním
+                                přehledem a grafy
+                            </div>
+                            <div class="list-group-item">Max 10 řešitelů</div>
+                            <div class="list-group-item">
+                                Materiály a tipy pro oznamovatele a řešitele
+                            </div>
+
+                            <div class="list-group-item">
+                                Přizpůsobení formuláře
+                            </div>
+                            <div class="list-group-item">
+                                Doporučení na právni poradnu
+                            </div>
+                            <div class="list-group-item">
+                                Garance vrácení peněz
+                            </div>
+                            <div class="list-group-item">Email support</div>
+
+                            <div class="list-group-item pricing-btn">
+                                <a
+                                    class="
+                                        btn btn-sm btn-border
+                                        circle-button
+                                        buynow
+                                    "
+                                    href="#"
+                                    data-flag="buy-premium"
+                                >
+                                    Nezávazně poptat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="list-group pricing-table">
+                            <div class="list-group-item pricing-price">
+                                3900 <span>Kč</span><span>/měsíčně</span
+                                ><span>*</span>
+                                <div class="special-offer">
+                                    V akci usetrite 23400 Kč ročne!
+                                </div>
+                            </div>
+                            <div class="list-group-item pricing-name">
+                                <h3>Enterprise</h3>
+                            </div>
+                            <div class="list-group-item">
+                                <strong>Více jak 150 zaměstnanců</strong>
+                            </div>
+
+                            <div class="list-group-item">
+                                Webové a mobilní rozhraní pro správu s detailním
+                                přehledem a grafy
+                            </div>
+                            <div class="list-group-item">
+                                <strong>Neomezený počet řešitelů</strong>
+                            </div>
+                            <div class="list-group-item">
+                                Materiály a tipy pro oznamovatele a řešitele
+                            </div>
+                            <div class="list-group-item">
+                                Přizpůsobení formuláře
+                            </div>
+                            <div class="list-group-item">
+                                Doporučení na právní poradnu
+                            </div>
+
+                            <div class="list-group-item">
+                                Garance vrácení peněz
+                            </div>
+                            <div class="list-group-item">
+                                Email a telefonický support
+                            </div>
+                            <div class="list-group-item pricing-btn">
+                                <a
+                                    class="
+                                        btn btn-sm btn-border
+                                        circle-button
+                                        buynow
+                                    "
+                                    data-flag="buy-enterprise"
+                                    href="#"
+                                >
+                                    Nezávazně poptat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="space" />
+                <p class="text-center">* Všechny uvedené ceny jsou bez DPH.</p>
+            </div>
+        </div>
+        <div class="section-bg-color bg-color" id="contact">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-12 col-center text-center">
+                        <h4 class="white text-l">Stále váháte? Zkuste DEMO!</h4>
+                        <a
+                            id="reservation2"
+                            class="circle-button btn btn-lg btn-border reserve"
+                            href="#"
+                            data-toggle="modal"
+                            data-target="#reserveModal"
+                        >
+                            Chci ukázku
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-empty">
+            <div class="container content">
+                <div class="row">
+                    <div class="col-md-8 col-center">
+                        <h2>Potřebujete pomoci nebo poradit?</h2>
+                        <p class="text-m">
+                            Zákaznická podpora je jednou z našich nejlepších
+                            služeb, odpovíme Vám na všechny žádosti do 24 hodin
+                            v každý pracovní den.
+                        </p>
+                        <hr class="space m" />
+                        <form
+                            id="contact-form"
+                            class="form-box form-ajax"
+                            type="submit"
+                        >
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input
+                                        id="mail-name"
+                                        name="name"
+                                        placeholder="Jméno"
+                                        type="text"
+                                        class="form-control form-value"
+                                        required=""
+                                    />
+                                </div>
+                                <div class="col-md-6">
+                                    <input
+                                        id="mail-email"
+                                        name="email"
+                                        placeholder="Email"
+                                        type="email"
+                                        class="form-control form-value"
+                                        required=""
+                                    />
+                                </div>
+                            </div>
+                            <hr class="space xs" />
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <textarea
+                                        id="messagge"
+                                        name="messagge"
+                                        placeholder="Váš dotaz ..."
+                                        class="form-control form-value"
+                                        required=""
+                                        rows="5"
+                                    ></textarea>
+                                    <hr class="space s" />
+                                    <button
+                                        class="
+                                            btn-sm btn btn-border
+                                            circle-button
+                                        "
+                                        type="submit"
+                                    >
+                                        <i class="fa fa-envelope-o"></i>Odeslat
+                                        zprávu
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- <div class="success-box">
+                                <div class="alert alert-success">
+                                    Congratulations. Your message has been sent
+                                    successfully
+                                </div>
+                            </div>
+                            <div class="error-box">
+                                <div class="alert alert-warning">
+                                    Error, please retry. Your message has not
+                                    been sent
+                                </div>
+                            </div> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer-base">
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 footer-center text-left">
+                            <img
+                                loading="lazy"
+                                src="./res/images/logo-oz-white.png"
+                                alt=""
+                                width="120"
+                            />
+                        </div>
+                        <div
+                            class="
+                                col-md-8
+                                footer-left
+                                text-left
+                                bg-color
+                                white
+                            "
+                        >
+                            <div class="tag-row">
+                                <a href="mailto:zakaznici@frankreport.cz"
+                                    >zakaznici@frankreport.cz</a
+                                >
+                            </div>
+                            <div class="tag-row">
+                                <p>
+                                    Provozuje společnost Lesuris Solutions
+                                    s.r.o., IČO:&nbsp;10813608,<br />
+                                    se sídlem Korunní 2569/108, 101 00, Praha,
+                                    zapsaná v obchodním rejstříku<br />
+                                    vedeném Městským soudem v Praze,
+                                    oddíl&nbsp;C, vložka&nbsp;348908.
+                                </p>
+                            </div>
+                            <div class="tag-row">
+                                <a href="https://www.lesuris.com/cs/"
+                                    >www.lesuris.com</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-delimiter">
+                    <div class="row">
+                        <div class="col-md-6 footer-copyright">
+                            <span>© 2021 FrankReport.cz</span>
+                        </div>
+                        <div class="col-md-2 footer-legal">
+                            <a
+                                href="https://www.lesuris.com/cs/legal-disclaimer/"
+                                >Právní ujednání</a
+                            >
+                        </div>
+                        <div class="col-md-2 footer-legal">
+                            <a href="https://www.lesuris.com/cs/privacy-policy/"
+                                >Ochrana osobních údajů</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <link
+                rel="stylesheet"
+                href="./res/scripts/font-awesome/css/font-awesome.css"
+            />
+            <script
+                async
+                src="./res/scripts/bootstrap/js/bootstrap.min.js"
+            ></script>
+
+            <script src="./res/scripts/imagesloaded.min.js"></script>
+            <script src="./res/scripts/jquery.tab-accordion.js"></script>
+        </footer>
+        <!-- Modal Reserve -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="reserveModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="modal-title"></h4>
+                    </div>
+                    <form id="reg-form">
+                        <div class="modal-body">
+                            <div class="row content">
+                                <div class="col-md-12">
+                                    <label for="name"
+                                        ><span>*</span> Vaše jméno</label
+                                    >
+                                    <input
+                                        id="name"
+                                        name="name"
+                                        placeholder="Jméno"
+                                        type="text"
+                                        class="form-control form-value"
+                                        required=""
+                                        required
+                                        oninvalid="this.setCustomValidity('Prosím vyplňte Vaše jméno a příjmení')"
+                                        oninput="setCustomValidity('')"
+                                    />
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="name"
+                                        ><span>*</span> Název společnosti</label
+                                    >
+                                    <input
+                                        id="company"
+                                        name="company"
+                                        placeholder="Název společnosti"
+                                        type="text"
+                                        class="form-control form-value"
+                                        required=""
+                                        required
+                                        oninvalid="this.setCustomValidity('Vyplňte prosím jméno společnosti.')"
+                                        oninput="setCustomValidity('')"
+                                    />
+                                </div>
+                                <div class="col-md-12">
+                                    <label for="name"
+                                        ><span>*</span> Váš kontaktní
+                                        email</label
+                                    >
+                                    <input
+                                        id="email"
+                                        name="email"
+                                        placeholder="Email"
+                                        type="email"
+                                        class="form-control form-value"
+                                        required=""
+                                        required
+                                        oninvalid="this.setCustomValidity('Vyplňte prosím vaši emailovou adresu.')"
+                                        oninput="setCustomValidity('')"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- <button
+                                type="button"
+                                class="btn btn-border"
+                                data-dismiss="modal"
+                            >
+                                Zavřít
+                            </button> -->
+                            <button
+                                type="submit"
+                                class="btn btn-primary"
+                                id="submit-regform"
+                            ></button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!-- /.modal -->
+        <!-- Modal Reserve -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="thankyouModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title">
+                            <img
+                                src="./res/images/emoji-check.png"
+                                loading="lazy"
+                            />
+                            Už na tom makáme!
+                        </h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="row content">
+                            <div class="col-md-12">
+                                Děkujeme Vám za projevený zájem. Do 48 hodin Vás
+                                bude kontaktovat člen našeho tímu a poskytne Vám
+                                detaily.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-border"
+                            data-dismiss="modal"
+                        >
+                            Zavřít
+                        </button>
+                    </div>
+                </div>
+                <!-- /.modal-content -->
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {},
+                Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement('script'),
+                    s0 = document.getElementsByTagName('script')[0];
+                s1.async = true;
+                s1.src =
+                    'https://embed.tawk.to/609d536ab1d5182476b89def/1f5j8rmnd';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+        <!-- /.modal -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+        <script>
+            var firebaseConfig = {
+                apiKey: 'AIzaSyAwVGDsE4XcNnPfv4PeNOUYz9uW-dTJLX0',
+                authDomain: 'signuper-def66.firebaseapp.com',
+                databaseURL: 'https://signuper-def66.firebaseio.com',
+                projectId: 'signuper-def66',
+                storageBucket: 'signuper-def66.appspot.com',
+                messagingSenderId: '143032833163',
+                appId: '1:143032833163:web:7bd7f3f43be9a65c9d708e',
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            // Your web app's Firebase configuration
+
+            //
+
+            //
+            //
+
+            $(document).ready(function () {
+                function emailIsValid(email) {
+                    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+                }
+                var currentFlag = '';
+                $('.reserve').click(function (e) {
+                    e.preventDefault();
+                    $('#modal-title').text('Demo registrace');
+                    $('#submit-regform').text('Zkusit ZDARMA');
+                    currentFlag = 'reserve';
+                    $('#reserveModal').trigger('focus');
+                });
+
+                $('.buynow').click(function (e) {
+                    e.preventDefault();
+                    $('#modal-title').text('Nezávazná poptávka + Akce');
+                    $('#submit-regform').text('Odeslat poptávku');
+                    currentFlag = $(this).data('flag');
+                    $('#reserveModal').trigger('focus');
+                    $('#reserveModal').modal('toggle');
+                });
+
+                $('#reg-form').submit(function (e) {
+                    e.preventDefault();
+                    var database = firebase.database();
+                    var name = $('#name').val();
+                    var company = $('#company').val();
+                    var email = $('#email').val();
+                    var mailValid = emailIsValid(email);
+                    var date = new Date().toLocaleString();
+
+                    firebase.database().ref().push({
+                        name,
+                        company,
+                        email,
+                        date,
+                        flag: currentFlag,
+                    });
+                    $('#reserveModal').modal('toggle');
+                    $('#thankyouModal').modal('toggle');
+                    $('#name').val('');
+                    $('#company').val('');
+                    $('#email').val('');
+                    return false;
+                });
+
+                $('#contact-form').submit(function (e) {
+                    e.preventDefault();
+                    var database = firebase.database();
+                    var name = $('#mail-name').val();
+                    var messagge = $('#messagge').val();
+                    var email = $('#mail-email').val();
+                    var date = new Date().toLocaleString();
+
+                    firebase.database().ref().push({
+                        name,
+                        messagge,
+                        email,
+                        date,
+                        flag: 'contact-form',
+                    });
+                    $('#thankyouModal').modal('toggle');
+                    $('#mail-name').val('');
+                    $('#messagge').val('');
+                    $('#mail-email').val('');
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>
