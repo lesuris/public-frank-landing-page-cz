@@ -6870,7 +6870,6 @@ MENU - RESPONSIVE
 
     .navbar-fixed-top,
     .navbar-fixed-bottom {
-        position: static !important;
         margin-top: 0 !important;
     }
 
