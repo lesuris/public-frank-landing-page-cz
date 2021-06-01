@@ -190,7 +190,7 @@
                                             src="res/images/eu.png"
                                             alt="vlajka EU"
                                         />
-                                        EU Směrnice</a
+                                        Směrnice EU</a
                                     >
                                 </li>
 
@@ -247,7 +247,7 @@
                             data-toggle="modal"
                             data-target="#reserveModal"
                         >
-                            Zdarma DEMO na zkoušku
+                            Vyzkoušejte zdarma
                         </button>
                     </div>
                 </div>
@@ -511,8 +511,8 @@
                                     <div class="inner">
                                         Naše řešení je nejdostupnější na českém
                                         trhu. Nabízíme služby ve 3 balíčcích s
-                                        jasnou cenou bez dalších skrytých
-                                        poplatků. Nemusíte se tedy obávat
+                                        jasnou cenovou politikou.
+                                        Nemusíte se tedy obávat
                                         žádných nepříjemných překvapení.
                                     </div>
                                 </div>
@@ -559,11 +559,11 @@
                 <div class="row">
                     <div class="col-md-8 col-center text-center">
                         <h1 class="text-xl">
-                            Informace o Směrnici EU o ochraně oznamovatelů.
+                            Informace o směrnici EU o ochraně oznamovatelů.
                         </h1>
                         <p>
                             Máte 50 či více zaměstnanců? V tom případě se Vás
-                            týká nová Směrnice Evropského parlamentu a Rady EU
+                            týká nová směrnice Evropského parlamentu a Rady EU
                             2019/1937 o ochraně osob, které oznamují porušení
                             práva Unie. Podle ní musí všechny soukromé a veřejné
                             organizace nad 50 zaměstnanců zavést bezpečný
@@ -576,6 +576,7 @@
                     <div class="text-center">
                         <a
                             href="https://eur-lex.europa.eu/legal-content/CS/TXT/?uri=CELEX:32019L1937"
+                            target="_blank"
                             class="circle-button btn btn-md btn-border"
                             ><i class="fa fa-info"></i>Plné znění směrnice EU</a
                         >
@@ -1274,7 +1275,7 @@
                 var currentFlag = '';
                 $('.reserve').click(function (e) {
                     e.preventDefault();
-                    $('#modal-title').text('Demo registrace');
+                    $('#modal-title').text('Zdarma DEMO na zkoušku');
                     $('#submit-regform').text('Zkusit ZDARMA');
                     currentFlag = 'reserve';
                     $('#reserveModal').trigger('focus');
@@ -1282,7 +1283,7 @@
 
                 $('.buynow').click(function (e) {
                     e.preventDefault();
-                    $('#modal-title').text('Nezávazná poptávka + Akce');
+                    $('#modal-title').text('Nezávazná poptávka + Využití akce');
                     $('#submit-regform').text('Odeslat poptávku');
                     currentFlag = $(this).data('flag');
                     $('#reserveModal').trigger('focus');
