@@ -748,6 +748,7 @@
                 <h2 class="text-center">
                     Férové a nejdostupnější řešení na trhu.
                 </h2>
+                <!--
                 <p class="text-center">
                     <span class="special-offer"
                         ><img
@@ -759,7 +760,7 @@
                         poptat ještě dnes!</span
                     >
                 </p>
-
+                -->
                 <hr class="space" />
                 <div class="row">
                     <div class="col-md-4">
@@ -767,9 +768,11 @@
                             <div class="list-group-item pricing-price">
                                 490 <span>Kč</span><span>/měsíčně</span
                                 ><span>*</span>
+                                <!--
                                 <div class="special-offer">
                                     V akci ušetříte 2940 Kč ročně!
                                 </div>
+                                -->
                             </div>
                             <div class="list-group-item pricing-name">
                                 <h3>Standard</h3>
@@ -816,9 +819,11 @@
                             <div class="list-group-item pricing-price">
                                 990 <span>Kč</span><span>/měsíčně</span
                                 ><span>*</span>
+                                <!--
                                 <div class="special-offer">
                                     V akci ušetříte 5940 Kč ročně!
                                 </div>
+                                -->
                             </div>
                             <div class="list-group-item pricing-name">
                                 <h3>Premium</h3>
@@ -867,9 +872,11 @@
                             <div class="list-group-item pricing-price">
                                 3900 <span>Kč</span><span>/měsíčně</span
                                 ><span>*</span>
+                                <!--
                                 <div class="special-offer">
                                     V akci ušetříte 23400 Kč ročně!
                                 </div>
+                                -->
                             </div>
                             <div class="list-group-item pricing-name">
                                 <h3>Enterprise</h3>
@@ -1300,7 +1307,8 @@
 
                 $('.buynow').click(function (e) {
                     e.preventDefault();
-                    $('#modal-title').text('Nezávazná poptávka + Využití akce');
+                    // $('#modal-title').text('Nezávazná poptávka + Využití akce');
+                    $('#modal-title').text('Nezávazná poptávka');
                     $('#submit-regform').text('Odeslat poptávku');
                     currentFlag = $(this).data('flag');
                     $('#reserveModal').trigger('focus');
