@@ -3395,11 +3395,27 @@ ANIMATION
     height: 500px;
 }
 
+.news-list {
+    display: inline-block;
+}
+.news-item {
+    display: inline;
+    float: left;
+    margin: 20px;
+}
 .news-e15 {
     display: block;
     width: 170px;
     height: 50px;
-    background-image: url(https://img.cncenter.cz/images/e15/dist/svg/logo-e15-cz.svg);
+    background-image: url(images/news/e15-cz.svg);
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.news-zive {
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-image: url(images/news/zive-cz.svg);
     background-repeat: no-repeat;
     margin: auto;
 }
