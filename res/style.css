@@ -3411,6 +3411,14 @@ ANIMATION
     background-repeat: no-repeat;
     margin: auto;
 }
+.news-seznamzpravy {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url(images/news/seznamzpravy-cz.svg);
+    background-repeat: no-repeat;
+    margin: auto;
+}
 .news-zive {
     display: block;
     width: 100px;
